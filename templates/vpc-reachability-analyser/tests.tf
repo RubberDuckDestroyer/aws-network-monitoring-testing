@@ -9,7 +9,7 @@ resource "aws_ec2_network_insights_analysis" "analysis" {
 
   wait_for_completion = true
 
-  # This will always re-create the path
+  # This will always re-create the path analysis
   lifecycle {
     replace_triggered_by = [
       null_resource.always_run
